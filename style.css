@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #22262A;
+}
+
+.jumbotron {
+    background-color: #151515;
+}
+
+.header-main-title {
+    color: #fff;
+}
+
+.character-search-box{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#searchForm{
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.character-search-box{
+    outline: none;
+}
+
+/* .charector-card{
+    height: 400px;
+    padding: 0;
+    display: flex;
+    background-color: white;
+}
+
+.charector-image{
+    height: 100%;
+}
+
+.charector-image > img{
+    height: 100%;
+}
+
+.charector-info{
+    overflow: hidden;
+}
+
+.charector-info > div{
+    margin-top: 10px;
+}
+
+.name{
+    font-size: 1.4rem;
+} */
+
+/* .comics{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,0.8fr))!important;
+    gap:3rem;
+    grid-auto-flow: row dense;
+}
+.comic-info > div{
+    margin-bottom: 10px;
+}
+
+.comic-image > img{
+    width: 100%;
+}
+
+.comic-info,.comic-copyright{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.comic-copyright{
+    border-top: 1px solid grey;
+} */
+
+#character-container,#comic-container{
+    background-color: #151515;
+    margin-bottom: 40px;
+    padding: 40px 100px;
+
+}
+
+.visible{
+    display: none;
+}
+
+.spinner-border{
+    height: 20px;
+    width: 20px;
+}
+
+.comic{
+    cursor: pointer;
+}
+

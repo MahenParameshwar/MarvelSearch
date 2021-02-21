@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container-fluid">
+        <header>
+            <img src="marvel.svg" alt="">
+        </header>
+        <div class="jumbotron">
+            <h1 class="header-main-title">Marvel Comics Character Search</h1>
+            <form id="searchForm">
+            <div class="form-group">
+                <input required type="text" name="name" id="name" class="form-control-lg character-search-box"
+                placeholder="(Ex. Hulk, Iron Man, Spider-Man, etc...)">
+            </div>
+            <input type="submit" value="Search!" class="btn btn-danger mb-2 search-character-button">
+            </form>
+        </div>
+        <div class="container-fluid" id="character-container">
+            <div class="loader visible">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <span class="text-danger">Loading Comics</span>
+            </div>
+            <div class="text-success visible">Done</div>
+            <h2 class="header-main-title">Character</h2>
+            <div class="charector-card card flex-md-row mb-4 box-shadow h-md-250 visible">
+                
+            </div>
+        </div>
+        <div class="container-fluid" id="comic-container">
+            <h2 class="header-main-title">Comics</h2>
+            <div class="comics card-columns">
+                
+            </div>
+        </div>
+    </div>
+        
+    
+    <script type="module" src="app.js"></script>
+    <script type="module" src="md5.js"></script>
+</body>
+</html>
