@@ -67,9 +67,9 @@ function getData(search) {
 //renders the charactor
 function renderDom(response) {
   const data = response.data.results[0];
-
-  getComics(data.id);
-  card.innerHTML = `<div class="charector-image">
+  if (data) {
+    getComics(data.id);
+    card.innerHTML = `<div class="charector-image">
                         <img class="card-img-right flex-auto d-md-block img-fluid" src="${data.thumbnail.path}/detail.jpg" alt="">
                     </div>
                     <div class="charector-info card-body d-flex flex-column align-items-start">
@@ -89,7 +89,13 @@ function renderDom(response) {
                             ${response.attributionText}
                         </div>`;
 
-  card.classList.toggle("visible");
+    card.classList.toggle("visible");
+  } else {
+    card.innerHTML = `<div>No Results found</div>`;
+    card.classList.toggle("visible");
+    loader.classList.toggle("visible");
+    sucess.classList.toggle("visible");
+  }
 }
 
 function getComics(id) {
